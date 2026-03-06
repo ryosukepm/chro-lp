@@ -928,30 +928,91 @@ strong {
 }
 
 /* Case Studies */
-.tags-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
+.case-grid {
+    display: grid;
+    gap: 1.5rem;
     margin-top: 2.5rem;
 }
 
-.industry-tag {
-    padding: 0.75rem 1.5rem;
-    background-color: var(--clr-white);
-    border: 1px solid var(--clr-gray);
-    border-radius: 50px;
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: var(--clr-navy);
-    box-shadow: var(--shadow-sm);
-    transition: var(--transition-fast);
+@media (min-width: 768px) {
+    .case-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .case-card:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        width: calc(50% - 0.75rem);
+        justify-self: center;
+    }
 }
 
-.industry-tag:hover {
-    border-color: var(--clr-accent);
+.case-card {
+    background: var(--clr-white);
+    border-radius: 12px;
+    border: 1px solid var(--clr-gray);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-base);
+}
+
+.case-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(212, 163, 49, 0.3);
+}
+
+.case-header {
+    background: var(--clr-navy);
+    color: var(--clr-white);
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.case-industry {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.case-size {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+}
+
+.case-body {
+    padding: 1.5rem;
+}
+
+.case-role {
     color: var(--clr-accent);
-    transform: translateY(-2px);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.case-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.case-details li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--clr-text-main);
+}
+
+.case-details li svg {
+    color: var(--clr-accent);
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    flex-shrink: 0;
 }
 
 .cases-note {
