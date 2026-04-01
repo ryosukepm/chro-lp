@@ -1337,3 +1337,48 @@ body {
         padding-bottom: 0;
     }
 }
+
+/* Mobile Typography Optimization */
+@media (max-width: 767px) {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    span,
+    li,
+    a {
+        word-break: auto-phrase;
+        overflow-wrap: break-word;
+    }
+
+    .hero-title {
+        font-size: 2.1rem;
+    }
+
+    .hero-desc {
+        font-size: 1.05rem;
+    }
+
+    .section-title {
+        font-size: 1.7rem;
+    }
+
+    .footer-title {
+        font-size: 1.45rem !important;
+        padding: 0 0.5rem;
+    }
+
+    .scarcity-text {
+        font-size: 1.15rem !important;
+    }
+
+    .scarcity-text span {
+        font-size: 0.95rem !important;
+    }
+
+    .footer-notice p {
+        font-size: 0.95rem !important;
+    }
+}
