@@ -1381,4 +1381,19 @@ body {
     .footer-notice p {
         font-size: 0.95rem !important;
     }
+
+    .nowrap-mobile {
+        white-space: nowrap !important;
+    }
+
+    .mid-cta h3 {
+        font-size: 1.25rem !important;
+    }
+
+    .btn-primary {
+        white-space: nowrap !important;
+        font-size: 1.05rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
 }
