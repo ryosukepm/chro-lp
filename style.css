@@ -372,6 +372,7 @@ strong {
 
     .hero-desc {
         font-size: 1.25rem;
+        max-width: 900px;
     }
 }
 
@@ -1026,7 +1027,7 @@ strong {
     margin: 0 auto;
     background: var(--clr-white);
     border-radius: 12px;
-    padding: 3rem;
+    padding: 1.5rem;
     box-shadow: var(--shadow-lg);
     border-top: 5px solid var(--clr-accent);
 }
@@ -1302,5 +1303,9 @@ strong {
 @media (min-width: 768px) {
     .footer-title {
         font-size: 2.8rem;
+    }
+
+    .profile-layout {
+        padding: 3rem;
     }
 }
