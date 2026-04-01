@@ -1266,6 +1266,39 @@ strong {
     text-align: center;
 }
 
+/* Direct Contract Model Diagram */
+.model-flow-diagram {
+    padding: 1rem 0 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px dashed var(--clr-gray);
+    display: flex;
+    justify-content: center;
+}
+
+.flow-agent-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.flow-pill {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--clr-gray);
+    border-radius: 8px;
+    background: white;
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    line-height: 1.4;
+}
+
+.flow-agent-box svg {
+    color: var(--clr-text-light);
+    width: 20px;
+    height: 20px;
+}
+
 @media (min-width: 768px) {
     .footer-title {
         font-size: 2.8rem;
