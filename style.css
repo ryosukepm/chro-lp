@@ -1114,8 +1114,23 @@ strong {
     border-top: 2px dashed var(--clr-gray);
 }
 
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--clr-light);
+    box-shadow: var(--shadow-sm);
+}
+
 .profile-name {
-    margin-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
 }
@@ -1127,11 +1142,32 @@ strong {
     line-height: 1.4;
 }
 
+.name-en-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+}
+
 .name-en {
     font-family: var(--font-sans-en);
     font-size: 0.95rem;
     color: var(--clr-text-light);
-    margin-top: 0.25rem;
+}
+
+.linkedin-link {
+    color: #0a66c2;
+    transition: var(--transition-fast);
+    display: inline-flex;
+}
+
+.linkedin-link:hover {
+    color: var(--clr-navy);
+}
+
+.linkedin-link svg {
+    width: 18px;
+    height: 18px;
 }
 
 .official-creds-list {
@@ -1204,7 +1240,7 @@ strong {
 .footer-bottom {
     background-color: rgba(0, 0, 0, 0.2);
     padding: 2rem 1.5rem;
-    text-align: center;
+    text-align: left;
     font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.5);
 }
