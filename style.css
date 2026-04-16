@@ -1,16 +1,22 @@
 :root {
     /* Color Palette */
-    --clr-navy: #0d2040;
-    --clr-navy-light: #163261;
-    --clr-accent: #d4a331;
-    /* sophisticated gold/orange */
-    --clr-accent-hover: #c09124;
+    --clr-navy: #1E3A8A;
+    /* Gentle deeper blue */
+    --clr-navy-light: #3B82F6;
+    /* Bright friendly sky blue */
+    --clr-accent: #38BDF8;
+    /* Fresh cyan/blue accent instead of gold */
+    --clr-accent-hover: #0EA5E9;
     --clr-white: #ffffff;
-    --clr-light: #f8f9fa;
-    --clr-gray: #e9ecef;
-    --clr-text-main: #333333;
-    --clr-text-sub: #666666;
-    --clr-text-light: #999999;
+    --clr-light: #F0F9FF;
+    /* Soft airy blue-tinted light background */
+    --clr-gray: #E0F2FE;
+    /* Friendly blue-gray */
+    --clr-blob: #EFF6FF;
+    /* Very faint blue for blob backgrounds */
+    --clr-text-main: #334155;
+    --clr-text-sub: #64748B;
+    --clr-text-light: #94A3B8;
 
     /* Typography */
     --font-sans-en: 'Inter', sans-serif;
@@ -1454,11 +1460,37 @@ body {
 .form-control:focus {
     outline: none;
     border-color: var(--clr-accent);
-    box-shadow: 0 0 0 3px rgba(212, 163, 49, 0.2);
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
 }
 
 @media (max-width: 767px) {
     .contact-card {
         padding: 1.5rem;
     }
+}
+
+/* Decorations */
+.blob-bg {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(40px);
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.blob-cyan {
+    background-color: #BAE6FD;
+}
+
+.blob-blue {
+    background-color: #BFDBFE;
+}
+
+.illust-float {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    mix-blend-mode: multiply;
+    opacity: 0.9;
 }
